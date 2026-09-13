@@ -3,6 +3,8 @@ import './App.css'
 import Banner from './Banner/Banner'
 import Navbar from './Navbar/Navbar'
 import Technologies from './Technology/Technologies'
+import { ToastContainer } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -16,13 +18,15 @@ function App() {
 
   return (
     <div>
-    <Navbar />
-    <Banner />
-    <Suspense fallback={<div className="text-center py-10 font-medium">Loading technologies...</div>}>
+      <Navbar />
+      <Banner />
+      <Suspense fallback={<div className="text-center py-10 font-medium">Loading technologies...</div>}>
         <Technologies techPromise={techPromise} />
       </Suspense>
+
+      <ToastContainer /> 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
