@@ -1,6 +1,6 @@
 import bannerImg from "../assets/banner-stack.png";
 
-const Hero = () => {
+const Banner = () => {
   return (
     <section className="container mx-auto px-4 py-12 md:py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -41,4 +41,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Banner;

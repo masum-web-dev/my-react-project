@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <defs>
+    <!-- ব্যাকগ্রাউন্ড গ্রেডিয়েন্ট -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+  </defs>
+
+  <!-- আইকন বক্স -->
+  <rect x="0" y="2" width="36" height="36" rx="8" fill="url(#bgGrad)" />
+  <text x="18" y="25" font-family="system-ui, sans-serif" font-weight="bold" font-size="16" fill="#ffffff" text-anchor="middle">DS</text>
+  
+  <!-- লোগো টেক্সট: Dev (সাদা) এবং Stack (পিংক) -->
+  <text x="48" y="27" font-family="system-ui, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5">
+    <tspan fill="#ffffff">Dev</tspan>
+    <tspan fill="#ec4899">Stack</tspan>
+  </text>
+</svg>

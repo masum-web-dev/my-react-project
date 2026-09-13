@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import './App.css'
 import Banner from './Banner/Banner'
 import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
 import Technologies from './Technology/Technologies'
 import { ToastContainer } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,10 +20,11 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Banner />
+      <Banner/>
       <Suspense fallback={<div className="text-center py-10 font-medium">Loading technologies...</div>}>
         <Technologies techPromise={techPromise} />
       </Suspense>
+      <Footer></Footer>
 
       <ToastContainer /> 
     </div>
